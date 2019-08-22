@@ -1,0 +1,37 @@
+/**
+ * A big comment we use this way
+ */
+/**
+ * Use variables to have homogeneous styles
+ */
+body {
+  background-color: white;
+  margin: 10px;
+  font-family: sans-serif;
+  color: white; }
+  body .wrapper-title {
+    background-color: #123955; }
+    body .wrapper-title h1 {
+      font-size: 2em;
+      padding: 2em 1em;
+      margin: 0; }
+  body #content {
+    padding: 20px;
+    font-size: 16px;
+    background-color: #2e536b; }
+    body #content .wrapper-info .fields {
+      display: inline-block; }
+    body #content .wrapper-info label {
+      display: block; }
+    body #content #insert-dom {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+      margin: 5% 0; }
+    body #content .img-example {
+      background-image: url("https://bitsdrupal.bitsamericas.co/sites/default/files/cards/logowhite.png");
+      display: inline-block;
+      width: 46%;
+      height: 65px;
+      background-repeat: no-repeat;
+      background-position: center; }

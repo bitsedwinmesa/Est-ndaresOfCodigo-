@@ -1,0 +1,70 @@
+@charset 'utf-8';
+/**
+ * A big comment we use this way
+ */
+
+// Okay I guess
+$font-type: unquote('sans-serif'); // or $font-type: sans-serif;
+
+/**
+ * Use variables to have homogeneous styles
+ */
+$padding: 20px;
+
+//font-size
+$letter-big: 28px;
+$letter-normal: 16px;
+$letter-small: 12px;
+
+// colors
+$primary-color: rgb(18, 57, 85);
+
+// Use this way for colors
+$primary-secundary: hsl(204, 40%, 30%);
+$white: rgba(255, 255, 255, 1);
+
+// space after to class
+body {
+  background-color: $white;
+  margin: 10px;
+  font-family: $font-type;
+  color: $white;
+  .wrapper-title {
+    background-color: $primary-color;
+    h1 {
+      font-size: 2em;
+      padding: 2em 1em;
+      margin: 0; // without using units of measure ex: 0em or 0px
+    }
+  }
+  #content {
+    padding: $padding;
+    font-size: $letter-normal;
+    background-color: $primary-secundary;
+    .wrapper-info {
+      .fields {
+        display: inline-block;
+      }
+      label{
+        display: block;
+      }
+    }
+    #insert-dom {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+      margin: 5% 0;// without using units of measure ex: 0em or 0px
+    }
+    // Use everything in quotes ex: url
+    .img-example {
+      background-image: url('https://bitsdrupal.bitsamericas.co/sites/default/files/cards/logowhite.png');
+      display: inline-block;
+      width: 46%;
+      height: 65px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+
